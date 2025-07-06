@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Plataforma de Investimentos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="images/mascot.png" alt="Mascote Robótico" class="mascot-image">
+            <div class="welcome-message">
+                <h1><strong>Olá! Pronto para investir no seu futuro?</strong></h1>
+                <p>Acesse sua conta e acompanhe seus investimentos de forma simples, segura e inteligente.</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="login-form-container">
+                <h2>LOGIN</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">E-mail ou Usuário</label>
+                        <input type="text" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="********" required>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+                    <button type="submit" id="loginButton">ACESSAR</button>
+                    <div class="server-message" id="serverMessage"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
